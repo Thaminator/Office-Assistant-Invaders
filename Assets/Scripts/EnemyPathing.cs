@@ -6,13 +6,15 @@ public class EnemyPathing : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    [SerializeField] List<Transform> waypoints;
+    [SerializeField] WaveConfig waveConfig;
+    List<Transform> waypoints;
     int waypointIndex = 0;
     [SerializeField] float moveSpeed = 2f;
 
 
     void Start()
     {
+        waypoints = waveConfig.GetWaypoints();
         transform.position = waypoints[waypointIndex].transform.position;
     }
 
