@@ -2,10 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class DamageDealer : MonoBehaviour
 {
-    [SerializeField] List<>
 
+    [SerializeField] int damage = 100;
+
+    public int GetDamage()
+    {
+        return damage;
+    }
+
+    public void Hit()
+    {
+        Destroy(gameObject);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -18,4 +28,7 @@ public class EnemySpawner : MonoBehaviour
     {
         
     }
+
+
+
 }
