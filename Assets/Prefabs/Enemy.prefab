@@ -93,5 +93,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd14e05d13c74a46ae276961c39b5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream:Assets/Prefabs/Enemy.prefab
   waveConfig: {fileID: 11400000, guid: 1dd5a091d1271434da0e50ea72848fd6, type: 2}
   moveSpeed: 2
+=======
+--- !u!114 &518197762302981187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5769695370753329707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6997af643f804e241a0890983953441e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  enemyLaserPrefab: {fileID: 3362315542405274364, guid: 71da447c9fa32364aaecddbe7d71652d,
+    type: 3}
+  enemyProjectileSpeed: 10
+  deathVFX: {fileID: 9012421088925073171, guid: 5ede4e4cce4053a4188da61998ef8c0c,
+    type: 3}
+  explosionDelay: 1
+  deathSound: {fileID: 8300000, guid: 0f9b90d6f950b234f83a9fbddd1ed6d3, type: 3}
+  deathSoundVolume: 0.7
+--- !u!61 &8303604801215711249
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5769695370753329707}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.049866855, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.39, y: 3.71}
+    newSize: {x: 4.39, y: 3.71}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2264233, y: 3.71}
+  m_EdgeRadius: 0
+>>>>>>> Stashed changes:Assets/Prefabs/Clippy.prefab
