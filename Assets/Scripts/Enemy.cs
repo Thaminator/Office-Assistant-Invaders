@@ -10,12 +10,15 @@ public class Enemy : MonoBehaviour
     [SerializeField] float maxTimeBetweenShots;
     [SerializeField] GameObject enemyLaserPrefab;
     [SerializeField] float enemyProjectileSpeed = 5f;
+<<<<<<< HEAD
     [SerializeField] GameObject deathVFX;
     [SerializeField] float explosionDelay = 1f;
     [SerializeField] AudioClip deathSound;
     [SerializeField] [Range(0,1)] float deathSoundVolume = 0.5f;
 
 
+=======
+>>>>>>> 8050e36a8b5a574ac4d28ec2e6361b5fcd304137
 
     void Start()
     {
@@ -62,6 +65,7 @@ public class Enemy : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
+<<<<<<< HEAD
             StartCoroutine(Die());
         }
     }
@@ -77,4 +81,10 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(explosionDelay);
     }
 
+=======
+            Destroy(gameObject);
+        }
+    }
+
+>>>>>>> 8050e36a8b5a574ac4d28ec2e6361b5fcd304137
 }
