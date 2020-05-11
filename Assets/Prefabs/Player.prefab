@@ -98,7 +98,7 @@ MonoBehaviour:
   verticalMoveSpeed: 8
   xPadding: 1
   yPadding: 1
-  health: 200
+  health: 5
   deathSound: {fileID: 8300000, guid: 7aae5bd14188c3a428fb71fbbd68bfcc, type: 3}
   deathSoundVolume: 0.565
   shootSound: {fileID: 8300000, guid: e0f979cc5adf5cd4db3c503ff6306cda, type: 3}
