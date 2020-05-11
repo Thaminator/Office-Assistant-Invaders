@@ -220,25 +220,25 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 1
+      minMaxState: 3
       minColor: {r: 1, g: 1, b: 1, a: 1}
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 0, g: 1, b: 0.05708027, a: 1}
-        key2: {r: 1, g: 0.98470926, b: 0, a: 0.44939452}
-        key3: {r: 1, g: 1, b: 1, a: 0.5312693}
-        key4: {r: 1, g: 0.6413793, b: 0, a: 0}
-        key5: {r: 1, g: 0, b: 0.9320464, a: 0.53333336}
+        key1: {r: 0, g: 0.9888339, b: 1, a: 0.48235294}
+        key2: {r: 0, g: 0.9888339, b: 1, a: 0.44939452}
+        key3: {r: 0, g: 0.9888339, b: 1, a: 0.5312693}
+        key4: {r: 0, g: 0.9888339, b: 1, a: 0}
+        key5: {r: 0, g: 0.9888339, b: 1, a: 0.53333336}
         key6: {r: 0, g: 0.9888339, b: 1, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 964
-        ctime1: 4626
-        ctime2: 19275
-        ctime3: 30455
-        ctime4: 36815
-        ctime5: 42212
+        ctime1: 53199
+        ctime2: 53199
+        ctime3: 53199
+        ctime4: 53199
+        ctime5: 53199
         ctime6: 53199
         ctime7: 0
         atime0: 0
@@ -250,11 +250,11 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_NumColorKeys: 7
+        m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 1}
+        key0: {r: 0.95548725, g: 1, b: 0.36470592, a: 0.64705884}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
@@ -663,7 +663,7 @@ ParticleSystem:
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 1
+    radiusThickness: 0.5
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
@@ -865,7 +865,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 400
+      scalar: 200
       minScalar: 10
       maxCurve:
         serializedVersion: 2

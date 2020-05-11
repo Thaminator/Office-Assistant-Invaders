@@ -99,6 +99,10 @@ MonoBehaviour:
   xPadding: 1
   yPadding: 1
   health: 200
+  deathSound: {fileID: 8300000, guid: 7aae5bd14188c3a428fb71fbbd68bfcc, type: 3}
+  deathSoundVolume: 0.565
+  shootSound: {fileID: 8300000, guid: e0f979cc5adf5cd4db3c503ff6306cda, type: 3}
+  shootSoundVolume: 0.006
   laserPrefab: {fileID: 3144953983079780390, guid: 2fb9b823d6d0a724d89e3ce896492d4f,
     type: 3}
   projectileSpeed: 20
