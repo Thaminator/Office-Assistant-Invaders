@@ -19,6 +19,12 @@ public class Level : MonoBehaviour
         FindObjectOfType<GameSession>().ResetGame();
     }
 
+    public void LoadIntro()
+    {
+        SceneManager.LoadScene("Intro");
+    }
+
+
     public void LoadGameOver()
     {
         StartCoroutine(WaitAndLoad());
