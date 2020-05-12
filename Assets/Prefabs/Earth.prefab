@@ -55,7 +55,7 @@ MonoBehaviour:
   maxTimeBetweenShots: 3
   enemyLaserPrefab: {fileID: 3362315542405274364, guid: 71da447c9fa32364aaecddbe7d71652d,
     type: 3}
-  enemyProjectileSpeed: 5
+  enemyProjectileSpeed: 6
   deathVFX: {fileID: 100000, guid: 39af89d13c6e1ea4aa44d9fd90d2696d, type: 3}
   durationOfExplosion: 1
   deathSound: {fileID: 8300000, guid: 7150bccd482a4c84c9e78ad6cdb61f2d, type: 3}
@@ -66,6 +66,7 @@ MonoBehaviour:
     type: 3}
   lifeSound: {fileID: 8300000, guid: a9caab7e441a1af4d9e0a9545d00b12e, type: 3}
   lifeSoundVolume: 0.228
+  spawnProbability: 0.01
 --- !u!212 &2096924818929763505
 SpriteRenderer:
   m_ObjectHideFlags: 0

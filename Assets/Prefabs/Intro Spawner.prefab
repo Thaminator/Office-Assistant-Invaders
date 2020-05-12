@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6057829077753749648}
   - component: {fileID: 6057829077753749649}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: Intro Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,11 +44,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveConfigs:
-  - {fileID: 11400000, guid: 558d400b04873bb439e869d7ebfea4e3, type: 2}
-  - {fileID: 11400000, guid: caf1e051a4821e24d9726c116b53c988, type: 2}
-  - {fileID: 11400000, guid: c66ce6126e685674cae385363a5670ba, type: 2}
-  - {fileID: 11400000, guid: f52199e470dd78d49865e48e401a8211, type: 2}
-  - {fileID: 11400000, guid: caf1e051a4821e24d9726c116b53c988, type: 2}
-  - {fileID: 11400000, guid: c66ce6126e685674cae385363a5670ba, type: 2}
+  - {fileID: 11400000, guid: e89a126e76b1c3e45989432b672bd517, type: 2}
+  - {fileID: 11400000, guid: c12cc2439758310479bef04370fa4294, type: 2}
+  - {fileID: 11400000, guid: d0ee29e6d04d1a1488cf4aa10f7bbcdb, type: 2}
+  - {fileID: 11400000, guid: 7d8d7fed292abf842bd0fcebb77a5e1d, type: 2}
+  - {fileID: 11400000, guid: 638806139c107f345a25d809b620d541, type: 2}
+  - {fileID: 11400000, guid: ac99f532d33228a4dbae4479f784fcd3, type: 2}
+  - {fileID: 11400000, guid: 37268d71114728046963bfad14a4fd75, type: 2}
+  - {fileID: 11400000, guid: 845d12bfce13bbe46a5b22173caf7863, type: 2}
+  - {fileID: 11400000, guid: ef58894f9fa0ce4488abcfce86771781, type: 2}
   startingWave: 0
   looping: 1

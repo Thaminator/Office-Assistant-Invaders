@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -793700127
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f4412a2f4efba8b4593207d5b25295a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -139,7 +139,7 @@ MonoBehaviour:
   deathVFX: {fileID: 100000, guid: 7ef5c04d67d82b24fbc45fa4bf0f5908, type: 3}
   deathSound: {fileID: 8300000, guid: a9caab7e441a1af4d9e0a9545d00b12e, type: 3}
   durationOfExplosion: 1
-  deathSoundVolume: 0.5
+  deathSoundVolume: 0.532
 --- !u!114 &101756014
 MonoBehaviour:
   m_ObjectHideFlags: 0

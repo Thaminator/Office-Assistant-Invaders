@@ -51,21 +51,22 @@ MonoBehaviour:
   health: 2
   scoreValue: 143
   shotCounter: 0
-  minTimeBetweenShots: 1
-  maxTimeBetweenShots: 3
+  minTimeBetweenShots: 2
+  maxTimeBetweenShots: 4
   enemyLaserPrefab: {fileID: 3362315542405274364, guid: 57d7f5e1cfca56c4dab4ef6f24cd45d0,
     type: 3}
-  enemyProjectileSpeed: 5
+  enemyProjectileSpeed: 3
   deathVFX: {fileID: 100000, guid: 39af89d13c6e1ea4aa44d9fd90d2696d, type: 3}
   durationOfExplosion: 1
   deathSound: {fileID: 8300000, guid: fe67b0a63836fcb41ae2c27b856998e2, type: 3}
-  deathSoundVolume: 0.209
+  deathSoundVolume: 0.15
   shootSound: {fileID: 8300000, guid: dd1f2eee00cd7f2449de070e4f33213a, type: 3}
   shootSoundVolume: 0.066
   lifePrefab: {fileID: 5879176566554409636, guid: 922905983379b71408fb6f93fe6a0721,
     type: 3}
   lifeSound: {fileID: 8300000, guid: a9caab7e441a1af4d9e0a9545d00b12e, type: 3}
   lifeSoundVolume: 0.228
+  spawnProbability: 0.01
 --- !u!212 &2096924818929763505
 SpriteRenderer:
   m_ObjectHideFlags: 0
