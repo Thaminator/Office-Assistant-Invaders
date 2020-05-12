@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2630821160256130350}
   - component: {fileID: 529485004064028521}
   - component: {fileID: 101756013}
+  - component: {fileID: 101756014}
   m_Layer: 9
   m_Name: Life
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5879176566554409636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.678627, y: -6.4453974, z: -71.57667}
-  m_LocalScale: {x: 0.9995036, y: 0.9995036, z: 0.9995036}
+  m_LocalScale: {x: 0.26286945, y: 0.26286945, z: 0.26286945}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -135,7 +136,20 @@ MonoBehaviour:
   health: 1
   scoreValue: 183
   lifeValue: 1
-  deathVFX: {fileID: 0}
-  deathSound: {fileID: 0}
+  deathVFX: {fileID: 100000, guid: 7ef5c04d67d82b24fbc45fa4bf0f5908, type: 3}
+  deathSound: {fileID: 8300000, guid: a9caab7e441a1af4d9e0a9545d00b12e, type: 3}
   durationOfExplosion: 1
   deathSoundVolume: 0.5
+--- !u!114 &101756014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5879176566554409636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f495427187c09a04cbb747f4b639a6b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heal: 1

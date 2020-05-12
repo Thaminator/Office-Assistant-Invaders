@@ -62,6 +62,10 @@ MonoBehaviour:
   deathSoundVolume: 0.209
   shootSound: {fileID: 8300000, guid: dd1f2eee00cd7f2449de070e4f33213a, type: 3}
   shootSoundVolume: 0.066
+  lifePrefab: {fileID: 5879176566554409636, guid: 922905983379b71408fb6f93fe6a0721,
+    type: 3}
+  lifeSound: {fileID: 8300000, guid: a9caab7e441a1af4d9e0a9545d00b12e, type: 3}
+  lifeSoundVolume: 0.228
 --- !u!212 &2096924818929763505
 SpriteRenderer:
   m_ObjectHideFlags: 0

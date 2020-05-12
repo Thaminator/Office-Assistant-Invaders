@@ -23,6 +23,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] AudioClip shootSound;
     [SerializeField] [Range(0, 1)] float shootSoundVolume = 0.1f;
 
+    [Header("Power Ups")]
+    [SerializeField] GameObject lifePrefab;
+    [SerializeField] AudioClip lifeSound;
+    [SerializeField] [Range(0, 1)] float lifeSoundVolume = 0.1f;
+    [SerializeField] float spawnProbability = 0.01f;
 
 
     void Start()
@@ -71,6 +76,11 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Die();
+            if (Random.value > 1-spawnProbability)
+            {
+                ReleaseLife();
+            }
+            
         }
     }
 
@@ -84,7 +94,16 @@ public class Enemy : MonoBehaviour
         AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
     }
 
+    private void ReleaseLife()
+    {
+        GameObject enemyLaser = Instantiate(
+               lifePrefab,
+               transform.position,
+               Quaternion.identity) as GameObject;
+        AudioSource.PlayClipAtPoint(lifeSound, Camera.main.transform.position, lifeSoundVolume);
 
+
+    }
 
         
     
