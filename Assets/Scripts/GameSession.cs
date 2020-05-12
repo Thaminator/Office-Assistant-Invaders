@@ -61,6 +61,12 @@ public class GameSession : MonoBehaviour
 
     }
 
+    public void AddToLife(int lifeValue)
+    {
+        life += lifeValue;
+        Debug.Log(life);
+
+    }
 
 
     public void ResetGame()

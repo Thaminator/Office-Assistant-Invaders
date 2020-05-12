@@ -53,7 +53,7 @@ MonoBehaviour:
   shotCounter: 0
   minTimeBetweenShots: 1
   maxTimeBetweenShots: 3
-  enemyLaserPrefab: {fileID: 3362315542405274364, guid: 71da447c9fa32364aaecddbe7d71652d,
+  enemyLaserPrefab: {fileID: 3362315542405274364, guid: 57d7f5e1cfca56c4dab4ef6f24cd45d0,
     type: 3}
   enemyProjectileSpeed: 5
   deathVFX: {fileID: 100000, guid: 39af89d13c6e1ea4aa44d9fd90d2696d, type: 3}

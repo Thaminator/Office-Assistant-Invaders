@@ -131,4 +131,9 @@ public class Player : MonoBehaviour
         return health;
     }
 
+    public void GainHealth()
+    {
+        health = health + 1;
+    }
+
 }
