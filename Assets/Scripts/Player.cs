@@ -33,6 +33,10 @@ public class Player : MonoBehaviour
     float yMin;
     float yMax;
 
+    [Header("PowerUp")]
+    [SerializeField] float laserScaleFactor = 0.2f;
+    [SerializeField] float delayInSeconds = 5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,8 +54,10 @@ public class Player : MonoBehaviour
 
     private IEnumerator FireContinuously()
     {
+
         while (true)
         {
+ 
             GameObject laser = Instantiate(
                            laserPrefab,
                            transform.position,
@@ -135,5 +141,26 @@ public class Player : MonoBehaviour
     {
         health = health + 1;
     }
+
+    public void activateLaserPowerup()
+    {
+        makeLaserBig();
+        StartCoroutine(makeLaserSmall());
+    }
+
+    public void makeLaserBig()
+    {
+        laserPrefab.transform.localScale = new Vector3(laserScaleFactor, laserScaleFactor, 0);
+
+    }
+
+    public IEnumerator makeLaserSmall()
+    {
+        yield return new WaitForSeconds(delayInSeconds);
+        laserPrefab.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f); ;
+
+    }
+
+
 
 }

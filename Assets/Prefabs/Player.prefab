@@ -109,6 +109,8 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 20
   projectileFiringPeriod: 0.08
+  laserScaleFactor: 0.3
+  delayInSeconds: 10
 --- !u!60 &7275818857134141422
 PolygonCollider2D:
   m_ObjectHideFlags: 0
