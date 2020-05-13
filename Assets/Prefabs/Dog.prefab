@@ -51,8 +51,8 @@ MonoBehaviour:
   health: 2
   scoreValue: 147
   shotCounter: 0
-  minTimeBetweenShots: 2
-  maxTimeBetweenShots: 4
+  minTimeBetweenShots: 1
+  maxTimeBetweenShots: 2
   enemyLaserPrefab: {fileID: 3362315542405274364, guid: 57d7f5e1cfca56c4dab4ef6f24cd45d0,
     type: 3}
   enemyProjectileSpeed: 5
