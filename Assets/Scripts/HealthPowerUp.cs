@@ -8,6 +8,7 @@ public class HealthPowerUp : MonoBehaviour
     [SerializeField] float health = 1f;
     [SerializeField] int scoreValue = 183;
     [SerializeField] int lifeValue = 1;
+    [SerializeField] float delayInSeconds = 1f;
 
 
     [Header("Effects")]
@@ -44,13 +45,14 @@ public class HealthPowerUp : MonoBehaviour
     private void ProcessHeal(HealthGiver healthGiver)
     {
         healthGiver.Hit();
-            Die();
+            StartCoroutine(Die());
     }
-    
 
 
-     private void Die()
+
+    IEnumerator Die()
     {
+        yield return new WaitForSeconds(delayInSeconds);
         FindObjectOfType<GameSession>().AddToScore(scoreValue);
         FindObjectOfType<Player>().GainHealth();
         Destroy(gameObject);
@@ -61,8 +63,7 @@ public class HealthPowerUp : MonoBehaviour
 
 
 
-        
-    
+
 
 
 }
