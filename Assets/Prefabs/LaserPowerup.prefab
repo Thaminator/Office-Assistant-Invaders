@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 2386639617198466639}
   - component: {fileID: 2096924818929763505}
   - component: {fileID: 2630821160256130350}
-  - component: {fileID: 529485004064028521}
-  - component: {fileID: 101756013}
-  - component: {fileID: 101756014}
+  - component: {fileID: 1326599121}
+  - component: {fileID: 1326599120}
   m_Layer: 9
   m_Name: LaserPowerup
   m_TagString: Untagged
@@ -105,8 +104,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &529485004064028521
-CircleCollider2D:
+--- !u!61 &1326599121
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -118,10 +117,20 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.073363006, y: 0.11954185}
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.34, y: 0.33}
+    newSize: {x: 4.39, y: 3.71}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 2.41606
---- !u!114 &101756013
+  m_Size: {x: 0.34, y: 0.33}
+  m_EdgeRadius: 0
+--- !u!114 &1326599120
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,27 +139,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5879176566554409636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3756ec269b2f94d4e9e07c7c86a70116, type: 3}
+  m_Script: {fileID: 11500000, guid: d841ea0cf0a22df45a6a23d74cbf52dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
   scoreValue: 183
-  lifeValue: 1
   delayInSeconds: 1
   deathVFX: {fileID: 100000, guid: 7ef5c04d67d82b24fbc45fa4bf0f5908, type: 3}
-  deathSound: {fileID: 8300000, guid: a9caab7e441a1af4d9e0a9545d00b12e, type: 3}
-  durationOfExplosion: 1
-  deathSoundVolume: 0
---- !u!114 &101756014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5879176566554409636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f495427187c09a04cbb747f4b639a6b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heal: 1
+  deathSound: {fileID: 8300000, guid: 5adb49c2fb66597479016b5546426a5c, type: 3}
+  durationOfExplosion: 2
+  deathSoundVolume: 0.5

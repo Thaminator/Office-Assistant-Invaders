@@ -29,6 +29,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] [Range(0, 1)] float lifeSoundVolume = 0.1f;
     [SerializeField] float spawnProbability = 0.01f;
 
+    [SerializeField] GameObject powerUpPrefab;
+    [SerializeField] float powerUpSpawnProbability = 0.2f;
+
 
     void Start()
     {
@@ -80,7 +83,10 @@ public class Enemy : MonoBehaviour
             {
                 ReleaseLife();
             }
-            
+            if (Random.value > 1 - powerUpSpawnProbability)
+            {
+                ReleasePowerUp();
+            }
         }
     }
 
@@ -105,8 +111,17 @@ public class Enemy : MonoBehaviour
 
     }
 
-        
-    
+    private void ReleasePowerUp()
+    {
+        GameObject powerUp = Instantiate(
+               powerUpPrefab,
+               transform.position,
+               Quaternion.identity) as GameObject;
+       
+
+
+    }
+
 
 
 }

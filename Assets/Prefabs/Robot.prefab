@@ -51,8 +51,8 @@ MonoBehaviour:
   health: 12
   scoreValue: 433
   shotCounter: 0
-  minTimeBetweenShots: 1
-  maxTimeBetweenShots: 3
+  minTimeBetweenShots: 2
+  maxTimeBetweenShots: 4
   enemyLaserPrefab: {fileID: 3362315542405274364, guid: c6df23573e2a8f94286592481274c1f6,
     type: 3}
   enemyProjectileSpeed: 3
@@ -67,6 +67,9 @@ MonoBehaviour:
   lifeSound: {fileID: 8300000, guid: a9caab7e441a1af4d9e0a9545d00b12e, type: 3}
   lifeSoundVolume: 0.228
   spawnProbability: 0.01
+  powerUpPrefab: {fileID: 5879176566554409636, guid: 34d4bf04eeeab094985566be24bcaa69,
+    type: 3}
+  powerUpSpawnProbability: 0.03
 --- !u!212 &2096924818929763505
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -139,7 +139,7 @@ MonoBehaviour:
   delayInSeconds: 1
   deathVFX: {fileID: 100000, guid: 7ef5c04d67d82b24fbc45fa4bf0f5908, type: 3}
   deathSound: {fileID: 8300000, guid: a9caab7e441a1af4d9e0a9545d00b12e, type: 3}
-  durationOfExplosion: 1
+  durationOfExplosion: 2
   deathSoundVolume: 0
 --- !u!114 &101756014
 MonoBehaviour:

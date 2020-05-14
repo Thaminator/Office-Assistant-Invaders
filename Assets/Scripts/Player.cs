@@ -124,7 +124,9 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-
+        laserPrefab.transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
+        projectileSpeed = 10f;
+        shootSoundVolume = 0.01f;
         FindObjectOfType<Level>().LoadGameOver();
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
@@ -151,13 +153,16 @@ public class Player : MonoBehaviour
     public void makeLaserBig()
     {
         laserPrefab.transform.localScale = new Vector3(laserScaleFactor, laserScaleFactor, 0);
-
+        projectileSpeed = 50f;
+        shootSoundVolume = 0.4f;
     }
 
     public IEnumerator makeLaserSmall()
     {
         yield return new WaitForSeconds(delayInSeconds);
-        laserPrefab.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f); ;
+        laserPrefab.transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
+        projectileSpeed = 10f;
+        shootSoundVolume = 0.01f;
 
     }
 
